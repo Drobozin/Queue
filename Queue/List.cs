@@ -34,11 +34,8 @@ namespace Queue
             return temp.Data;
         }
 
-        public ComplexClass Peek()
-        {
-            return _first?.Data;
-        }
-
+        public ComplexClass Peek() => _first?.Data;
+        
         private class Node
         {
             public Node(ComplexClass data, Node next = null)
